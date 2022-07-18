@@ -22,5 +22,13 @@ public class MatriculaColegio extends Matricula{
         
     public double obtenerMatricula(){
         return matricula;
+
+    }
+     public String toString() {
+        String cadena = "";
+        cadena = String.format("Matricula Colegio %.2f",obtenerMatricula());
+
+        return cadena;
     }
 }
+

@@ -37,14 +37,14 @@ public class TipoMatricula {
     public double obtenerPromedioMatriculas() {
         return promedioMatriculas;
     }
-    
-    public String toString(){
-    
-    String cadena = "Lista de Matriculas\n";
+
+    public String toString() {
+
+        String cadena = "Lista de Matriculas\n";
         for (int i = 0; i < matriculas.size(); i++) {
-            cadena = String.format("%s%.2f\n",cadena, matriculas.get(i).obtenerMatricula());
+            cadena = String.format("%s%s\n", cadena, matriculas.get(i));
         }
-        cadena = String.format("%sPromedio de Matriculas: %s\n", cadena,obtenerPromedioMatriculas());
+        cadena = String.format("%sPromedio de Matriculas: %s\n", cadena, obtenerPromedioMatriculas());
         return cadena;
     }
 
