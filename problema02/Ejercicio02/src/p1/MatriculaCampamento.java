@@ -5,19 +5,21 @@
  */
 package p1;
 
+import p3.Matricula;
+
 /**
  *
  * @author reroes
  */
-public class MatriculaCampamento {
-    private double tarifa;
+public class MatriculaCampamento extends Matricula{
+    private double matricula;
     
-    public void establecerTarifa(){
+    public void establecerMatricula(){
         // tarifa = costo transporte + costo comida + costo instructores
-        tarifa = 100.2 + 30.2 + 90.2;
+        matricula = 100.2 + 30.2 + 90.2;
     }
         
-    public double obtenerTarifa(){
-        return tarifa;
+    public double obtenerMatricula(){
+        return matricula;
     }
 }

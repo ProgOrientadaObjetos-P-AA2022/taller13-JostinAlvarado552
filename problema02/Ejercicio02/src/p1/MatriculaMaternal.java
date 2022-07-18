@@ -5,20 +5,23 @@
  */
 package p1;
 
+import p3.Matricula;
+
 /**
  *
  * @author reroes
  */
-public class MatriculaMaternal {
+public class MatriculaMaternal extends Matricula{
     private double tarifa;
     
         
-    public void establecerTarifa(){
+    public void establecerMatricula(){
         // tarifa = costo desayunos + costo almuerzo + costo medico
         tarifa = 50.2 + 40.2 + 80.2;
     }
         
-    public double obtenerTarifa(){
+    public double obtenerMatricula(){
         return tarifa;
     }
+    
 }

@@ -9,15 +9,13 @@ package p3;
  *
  * @author reroes
  */
-public class DominioGmail implements Dominio{
+public class DominioUTPL  implements Dominio{
     private String dominio;
     
-    @Override
     public void establecerDominio(){
-        dominio = "@gmail.com";
+        dominio = "@utpl.edu.ec";
     }
     
-    @Override
     public String obtenerDominio(){
         return dominio;
     }

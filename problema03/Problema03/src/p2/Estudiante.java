@@ -44,10 +44,9 @@ public class Estudiante {
 
     @Override
     public String toString() {
-        String data = String.format("Información: %s\n", obtenerNombres());
+        String data = String.format("Lista de Correos\nInformación: %s\n\n", obtenerNombres());
 
         for (int i = 0; i < correos.size(); i++) {
-
             data = String.format("%s%s\n", data,
                     correos.get(i).obtenerCorreo());
         }
